@@ -30,6 +30,15 @@
                                         class="form-control" name="search" id="" aria-describedby="helpId" placeholder="Search ...">
                                     </div>
                                 </form>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filter By
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Junior Jaycess</a>
+                                    <a class="dropdown-item" href="#">Senior Jaycess</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                  </div>
+                                </div>
                               <table class="table table-striped table-bordered sourced-data">
                                 <thead>
                                   <tr>
