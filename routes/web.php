@@ -27,6 +27,22 @@ Route::get('/tables', function () {
     return view('tables');
 });
 
+Route::get('/addhotel', function () {
+    return view('hotel.addhotel');
+});
+
+Route::get('/viewhotel', function(){
+    return view('hotel.viewhotel');
+});
+
+Route::get('/addlom', function () {
+    return view('lom.addlom');
+});
+
+Route::get('/viewlom', function(){
+    return view('lom.viewlom');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
