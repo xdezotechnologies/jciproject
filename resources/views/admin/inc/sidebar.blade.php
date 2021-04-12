@@ -8,7 +8,7 @@
           <span data-i18n="nav.category.layouts">Events Manager</span><i class="la la-ellipsis-h ft-minus" data-toggle="tooltip"
           data-placement="right" data-original-title="Layouts"></i>
         </li>
-        <li class=" nav-item"><a href="#"><i class="la la-header"></i><span class="menu-title" data-i18n="nav.page_headers.main">Individual Registration</span></a>
+        <li class=" nav-item"><a href="{{ url('individualreg') }}"><i class="la la-header"></i><span class="menu-title" data-i18n="nav.page_headers.main">Individual Registration</span></a>
         </li>
         <li class="navigation-header">
             <span data-i18n="nav.category.layouts">Settings</span><i class="la la-ellipsis-h ft-minus" data-toggle="tooltip"

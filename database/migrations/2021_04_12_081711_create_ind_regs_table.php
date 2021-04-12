@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateIndReg extends Migration
+class CreateIndRegsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,19 @@ class CreateIndReg extends Migration
      */
     public function up()
     {
-        Schema::create('ind_reg', function (Blueprint $table) {
+        Schema::create('ind_regs', function (Blueprint $table) {
             $table->id();
-            $table->integer('d_cat')->nullable();
-            $table->integer('r_type')->nullable();
+            $table->string('d_cat')->nullable();
+            $table->string('r_type')->nullable();
             $table->string('f_name')->nullable();
             $table->string('lom_area')->nullable();
-            $table->integer('lom_id')->nullable();
+            $table->string('lom_id')->nullable();
             $table->string('position')->nullable();
             $table->string('gender')->nullable();
             $table->string('contact')->nullable();
             $table->string('email')->nullable();
             $table->string('spouse')->nullable();
-            $table->integer('package_id')->nullable();
+            $table->string('package_id')->nullable();
             $table->date('d_deposit')->nullable();
             $table->string('d_amt')->nullable();
             $table->string('u_vou')->nullable();
@@ -45,6 +45,6 @@ class CreateIndReg extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ind_reg');
+        Schema::dropIfExists('ind_regs');
     }
 }

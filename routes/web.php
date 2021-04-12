@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\AjaxController;
+use App\Http\Controllers\Ind_regController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,9 +39,11 @@ Route::get('/testindex', function () {
     return view('front.index');
 });
 
-Route::get('/testsingle', function () {
-    return view('front.individual-registration');
-});
+Route::get('/individualreg', [Ind_regController::class, 'index']);
+Route::post('/individualreg', [Ind_regController::class, 'store']);
+Route::get('/testsingle', [Ind_regController::class, 'create']);
+
+
 
 Route::get('/testgroup', function () {
     return view('front.group-registration');

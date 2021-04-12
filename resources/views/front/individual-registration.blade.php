@@ -10,7 +10,8 @@
                     <div class="col-12 col-xl-9 col-lg-10 col-md-11 d-flex flex-column justify-content-center full-screen  padding-2-half-rem-lr md-landscape-h-600px xs-padding-15px-lr">
                         <div class="bg-transparent-dark-purple-2 border-radius-6px padding-6-half-rem-all lg-padding-5-rem-all md-padding-4-half-rem-all sm-padding-2-rem-lr">
                             <div class=""><h4 class="text-color text-center font-weight-bold">Individual Registration</h4></div>
-                            <form action="">
+                            <form method="post" action="/individualreg">
+                                @csrf
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                             <label for="registration">Delegates Category</label>
