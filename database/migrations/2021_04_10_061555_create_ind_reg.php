@@ -15,8 +15,8 @@ class CreateIndReg extends Migration
     {
         Schema::create('ind_reg', function (Blueprint $table) {
             $table->id();
-            $table->integer('d_cat')->nullable();
-            $table->integer('r_type')->nullable();
+            $table->string('d_cat')->nullable();
+            $table->string('r_type')->nullable();
             $table->string('f_name')->nullable();
             $table->string('lom_area')->nullable();
             $table->integer('lom_id')->nullable();
@@ -25,7 +25,7 @@ class CreateIndReg extends Migration
             $table->string('contact')->nullable();
             $table->string('email')->nullable();
             $table->string('spouse')->nullable();
-            $table->integer('package_id')->nullable();
+            $table->string('package_id')->nullable();
             $table->date('d_deposit')->nullable();
             $table->string('d_amt')->nullable();
             $table->string('u_vou')->nullable();
