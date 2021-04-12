@@ -1,0 +1,44 @@
+.text-color{
+    color:#f46e17;
+}
+.signup{
+    margin-left: 32%;
+}
+@media only screen and (min-width: 770px) {
+    .signup{
+      margin-left: 34%;
+    }
+    .control-form{
+        padding:12px;
+    }
+}
+@media only screen and (min-width: 400px) {
+    .form-control{
+        padding: 4%;
+    }
+}
+.form-control{
+    /* padding: 4%; */
+}
+.form-group{
+    font-size: 20px;
+}
+.my-nav-bg{
+    background-color: #2a1c2df5;
+}
+.smallLogo{
+    position:relative;
+  
+}
+.nav-img{
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 150px;
+}
+@media only screen and (min-width: 990px) {
+    .smallLogo{
+       display: none;
+    }
+}
+

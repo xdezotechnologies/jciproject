@@ -1,0 +1,50 @@
+.text-color{
+    color:#f46e17;
+}
+/* .login{
+    margin-left: 125px;
+} */
+.form-group{
+    font-size: 20px;
+}
+.my-nav-bg{
+    background-color: #2a1c2df5;
+}
+.login-flex{
+    display: flex ;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 32%;
+    font-size: large;
+}
+.btn-login{
+    margin-left: 33%;
+}
+.label-form{
+    text-align: left !important;
+}
+@media only screen and (min-width: 990px) {
+    .login-flex{
+        margin-left: 23%;
+    }
+}
+@media only screen and (min-width: 773px) {
+    .login-flex{
+        margin-left: 35%;
+    }
+}
+.smallLogo{
+    position:relative;
+  
+}
+.nav-img{
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 150px;
+}
+@media only screen and (min-width: 990px) {
+    .smallLogo{
+       display: none;
+    }
+}

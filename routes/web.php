@@ -27,26 +27,47 @@ Route::get('/tables', function () {
     return view('tables');
 });
 
-Route::get('/addhotel', function () {
-    return view('hotel.addhotel');
-});
-
-Route::get('/viewhotel', function(){
-    return view('hotel.viewhotel');
-});
-
-Route::get('/addlom', function () {
-    return view('lom.addlom');
-});
-
-Route::get('/viewlom', function(){
-    return view('lom.viewlom');
-});
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+//Front-end routes
+Route::get('/testindex', function () {
+    return view('front.index');
+});
+
+Route::get('/testsingle', function () {
+    return view('front.individual-registration');
+});
+
+Route::get('/testgroup', function () {
+    return view('front.group-registration');
+});
+
+
+
+//Back-end routes
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Hotel routes
+Route::resource('hotel','App\Http\Controllers\HotelController');
+Route::post('importhotel', 'App\Http\Controllers\HotelController@import')->name('importhotel');
+Route::get('exporthotel', 'App\Http\Controllers\HotelController@export')->name('exporthotel');
+
+//Hotel routes
+Route::resource('lom','App\Http\Controllers\LomController');
+Route::post('importlom', 'App\Http\Controllers\LomController@import')->name('importlom');
+Route::get('exportlom', 'App\Http\Controllers\LomController@export')->name('exportlom');
+
+//Page routes
+Route::resource('page','App\Http\Controllers\PageController');
+Route::post('importlom', 'App\Http\Controllers\LomController@import')->name('importlom');
+Route::get('exportlom', 'App\Http\Controllers\LomController@export')->name('exportlom');
+
+//Page routes
+Route::resource('file','App\Http\Controllers\FileController');
+

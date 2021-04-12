@@ -1,0 +1,57 @@
+.registrationHeading{
+    font-size: larger;
+}
+.registrationBtn:hover{
+    color: white;
+}
+.panel-body{
+    padding:10px 0 10px 0 !important;
+}
+.border-color-white-transparent {
+    border-color: rgba(255,255,255,0) !important;
+}
+.registrationDescription{
+    font-size: medium;
+}
+.my-nav-bg{
+    background-color: #2a1c2df5;
+}
+.smallLogo{
+    position:relative;
+  
+}
+.nav-img{
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 150px;
+}
+@media only screen and (min-width: 990px) {
+    .smallLogo{
+       display: none;
+    }
+}
+.default-logo{
+    width: 170px !important;
+}
+.mobileDropdown >a{
+    color: #000 !important;
+}
+.mobileDropdown >a:focus{
+    color: #000 !important;
+}
+.mobileLink, .mobileLink:active, .mobileLink:focus {
+    color: #828282 !important;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar.navbar-dark .header-search-icon > a:hover, .navbar.navbar-dark .header-social-icon > a:hover, .navbar.navbar-dark .header-cart-icon > a:hover, .navbar.navbar-dark .header-language > a:hover, .navbar.navbar-dark .header-language a > i > a:hover, .sticky .navbar-light.header-dark .navbar-nav .nav-link.active, .sticky .navbar-light.header-dark .navbar-nav .nav-link:hover, .sticky .navbar-light.header-dark .navbar-nav .nav-link:focus, .sticky .navbar-light.header-dark .header-search-icon > a:hover, .sticky .navbar-light.header-dark .header-social-icon > a:hover, .sticky .navbar-light.header-dark .header-cart-icon > a:hover, .sticky .navbar-light.header-dark .header-language > a:hover, .sticky .navbar-light.header-dark .header-language > a:hover, .top-bar.navbar-light .header-search-icon > a:hover, .top-bar.navbar-light .header-social-icon > a:hover, .top-bar.navbar-light .header-cart-icon > a:hover, .top-bar.navbar-light .header-language > a:hover, .top-bar.navbar-light .top-bar-contact-list > a:hover, .top-bar.navbar-light .header-language.dropdown-style-01 .btn:hover {
+    color: black !important;
+    cursor: pointer;
+}
+.mobileDropdownLink{
+    font-size: 15px;
+}
+
+.modal.show .modal-dialog {
+    top: 100px;
+}

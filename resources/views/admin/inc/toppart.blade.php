@@ -15,6 +15,11 @@
   rel="stylesheet">
   <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css"
   rel="stylesheet">
-  <link rel="stylesheet" href="{{asset('css/all.css')}}">
+
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/vendors.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/tables/datatable/datatables.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/all.css')}}">
   @yield('pagecss')
+  <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/editors/tinymce/tinymce.min.css')}}">
 </head>
