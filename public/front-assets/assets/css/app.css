@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    font-size: 18px;
+    line-height: 28px;
+}
+.navBtn{
+    background-color: white;
+    color: #f46e17 !important;
+    border-color: #f46e17;
+    border-radius: 0;
+    font-size: medium;
+}
+.navBtn:hover{
+    background-color: #f46e17;
+    color: white !important;
+}
+.navBtn:focus{
+    background-color: #f46e17 !important;
+    color: white !important;
+}
+
+.navbar{
+    border-bottom:1px solid #0087CB ;
+    /* box-shadow: 1px 1px 5px #0087CB; */
+}
+.registrationBtn{
+    background-color: white;
+    color: #f46e17 !important;
+    border-color: #f46e17;
+    border-radius: 0;
+    font-size: large;
+    position: relative;
+    z-index: 1;
+}
+.registrationBtn:hover{
+    color: white !important;
+}
+.registrationBtn::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #f46e17;
+    transform: translateZ(0);
+    z-index: -1;
+    transition: width linear 0.4s;
+}
+.registrationBtn:hover:before{
+    content: "";
+    width: 100%;
+    color: white;
+}
+.wrapper{
+    overflow: auto;
+}
+/* Event */
+.event-heading{
+    font-size: 50px;
+    color: #f46e17;
+}
+.describe-event{
+    font-size: 20px;
+}
+.event{
+    margin-top:90px;
+}
+.text-center{
+background-color: #BAE7FC;
+}
+.text-center{
+    font-size: 20px;
+}
+.btn-submit{
+    color: rgb(25, 11, 235);
+    align-items: center;
+}
+
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 600px) {
+    
+  }
+
+  /* footer */
+.btn-floating:hover{
+    background-color: #f46e17;
+}
+  .btn-footer{
+    background-color: white;
+    color: #f46e17 !important;
+    border-color: #f46e17;
+    border-radius: 0;
+    font-size: medium;
+}
+.btn-footer:hover{
+    background-color: #f46e17;
+    color: white !important;
+}
+.btn-footer:focus{
+    background-color: #f46e17 !important;
+    color: white !important;
+}

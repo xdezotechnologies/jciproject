@@ -1,0 +1,53 @@
+.text-color{
+    color:#f46e17;
+}
+.login{
+    margin-left: 145px;
+}
+.form-group{
+    font-size: 20px;
+}
+.singleregistration{
+    width: 130px;
+}
+.my-nav-bg{
+    background-color: #2a1c2df5;
+}
+.smallLogo{
+    position:relative;
+  
+}
+.nav-img{
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 150px;
+}
+@media only screen and (min-width: 990px) {
+    .smallLogo{
+       display: none;
+    }
+    .dropdownBigHide{
+       display: none;
+
+    }
+}
+.form-control{
+    height: 40px !important;
+    font-size: 13.5px !important;
+}
+.form-control-file{
+    line-height: 13px;
+    background-color: white;
+    color: darkslategray;
+    border-radius: 2px;
+    font-size: 15px;
+
+}
+.searchBoxInput{
+    width:300px !important;
+    height: 100px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 15px;
+}

@@ -15,8 +15,8 @@ class CreateLom extends Migration
     {
         Schema::create('loms', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('status');
+            $table->string('name')->nullable();
+            $table->integer('status')->default(1);
             $table->timestamps();
         });
     }
